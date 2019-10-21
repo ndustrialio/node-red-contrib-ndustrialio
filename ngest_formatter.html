@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('nGest Formatter', {
+        category: 'ndustrial.io',
+        color: '#99be40',
+        defaults: {
+            name: { value: "" }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "feeds_icon2x.png",
+        label: function () {
+            return this.name || "nGest Formatter";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="nGest Formatter">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>ngest-format</label>
+        <input type="text" id="node-input-name" placeholder="ngest-format">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="nGest Formatter">
+    <p>A simple node that converts a name: value: message payload into the nGest format</p>
+</script>

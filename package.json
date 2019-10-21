@@ -1,6 +1,6 @@
 {
   "name": "@ndustrial/nodered-ngest",
-  "version": "1.0.1",
+  "version": "0.0.1",
   "description": "node red",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,7 @@
   },
   "node-red": {
     "nodes": {
-      "ngest": "ngest.js"
+      "ngest": "ngest_formatter.js"
     }
   },
   "devDependencies": {}
