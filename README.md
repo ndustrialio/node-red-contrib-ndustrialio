@@ -1,5 +1,7 @@
 # node-red-contrib-ndustrialio
 
+A collection of nodes to send data to/from ndustrialio's Contxt Platform
+
 ## nGest Formatter
 
 Converts an array of dictionaries into nGest format that can be sent directly to a nGest feed. Timestamp will be set at current time.
