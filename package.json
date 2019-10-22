@@ -1,5 +1,5 @@
 {
-  "name": "@ndustrial/nodered-ngest",
+  "name": "@ndustrial/node-red-contrib-ndustrialio",
   "version": "0.0.2",
   "description": "node red",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/jeffdyoung/ngest_nodered.git"
   },
-  "author": "",
+  "author": "jeff@ndustrial.io",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jeffdyoung/ngest_nodered/issues"
@@ -24,5 +24,8 @@
       "ngest": "ngest_formatter.js"
     }
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "keywords": [
+    "node-red"
+  ]
 }
