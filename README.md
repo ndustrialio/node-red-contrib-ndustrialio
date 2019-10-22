@@ -1,4 +1,6 @@
-# ngest_nodered
+# node-red-contrib-ndustrialio
+
+## nGest Formatter
 
 Converts an array of dictionaries into nGest format that can be sent directly to a nGest feed. Timestamp will be set at current time.
 
