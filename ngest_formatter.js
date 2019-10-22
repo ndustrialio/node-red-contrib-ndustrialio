@@ -27,7 +27,8 @@ module.exports = function (RED) {
                 delete element.name;
             });
             ngestmsg.payload.data = msg.payload;
-            ngestmsg.payload=JSON.stringify(ngestmsg.payload);
+            ngestmsg.payload = JSON.stringify(ngestmsg.payload);
+            ngestmsg.payload = JSON.parse(ngestmsg.payload);
             node.send(ngestmsg);
         });
     }

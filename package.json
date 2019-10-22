@@ -1,6 +1,6 @@
 {
   "name": "@ndustrial/nodered-ngest",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "node red",
   "main": "index.js",
   "scripts": {
