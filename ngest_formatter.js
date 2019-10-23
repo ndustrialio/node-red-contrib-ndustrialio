@@ -1,10 +1,10 @@
-const sdk = require('@ndustrial/contxt-sdk');
+//const sdk = require('@ndustrial/contxt-sdk');
 
 module.exports = function (RED) {
     function NgestFormatterNode(config) {
         RED.nodes.createNode(this, config);
         var node = this;
-        node.on('input', function (msg) {
+        node.on('input', function (msg, send, done) {
             var ngestmsg = {};
             ngestmsg.payload = {};
             ngestmsg.payload.type = "timeseries";
@@ -30,6 +30,9 @@ module.exports = function (RED) {
             ngestmsg.payload = JSON.stringify(ngestmsg.payload);
             ngestmsg.payload = JSON.parse(ngestmsg.payload);
             node.send(ngestmsg);
+            if (done) {
+                done();
+            }
         });
     }
     RED.nodes.registerType("nGest Formatter", NgestFormatterNode);

@@ -1,6 +1,6 @@
 <script type="text/javascript">
     RED.nodes.registerType('nGest Formatter', {
-        category: 'ndustrial.io',
+        category: 'ndustrialio',
         color: '#99be40',
         defaults: {
             name: { value: "" }
@@ -16,11 +16,46 @@
 
 <script type="text/x-red" data-template-name="nGest Formatter">
     <div class="form-row">
-        <label for="node-input-name"><i class="icon-tag"></i>ngest-format</label>
-        <input type="text" id="node-input-name" placeholder="ngest-format">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="nGest Formatter">
     </div>
 </script>
-
 <script type="text/x-red" data-help-name="nGest Formatter">
-    <p>A simple node that converts a name: value: message payload into the nGest format</p>
+    <p>A simple node that converts an array of objects into ndustrial.io's nGest formant</p>
+    <p>Expected Input:</p>
+    <pre>
+    msg.payload : array[2]
+    array[2]
+    0: object
+        name: "switch1"
+        value: "true"
+    1: object
+        name: "switch2"
+        value: "true" 
+    </pre>
+    <p>To a message payload into the nGest format</p>
+    <p>nGest Output</p>
+    <pre>
+    msg.payload : Object
+    object
+    type: "timeseries"
+    data: array[2]
+        0: object
+        timestamp: "1571748448099"
+        data: object
+            switch1: object
+                value: "false"
+        1: object
+        timestamp: "1571748448099"
+        data: object
+            switch2: object
+            value: "true"  
+    </pre>
+    <p>To join several inputs use 'join' and manually join by array</p>
+    <p> Then flatten the array with a function node:</p>
+    <pre>
+    msg.payload = [].concat.apply([],msg.payload);
+    return msg;
+    </pre>
+
 </script>

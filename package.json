@@ -1,6 +1,6 @@
 {
   "name": "@ndustrial/node-red-contrib-ndustrialio",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "node red",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jeffdyoung/ngest_nodered.git"
+    "url": "git+https://github.com/ndustrialio/node-red-contrib-ndustrialio.git"
   },
   "author": "jeff@ndustrial.io",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jeffdyoung/ngest_nodered/issues"
+    "url": "https://github.com/ndustrialio/node-red-contrib-ndustrialio/issues"
   },
-  "homepage": "https://github.com/jeffdyoung/ngest_nodered#readme",
+  "homepage": "https://github.com/ndustrialio/node-red-contrib-ndustrialiod#readme",
   "dependencies": {
     "@ndustrial/contxt-sdk": "^2.4.0"
   },
