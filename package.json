@@ -16,9 +16,7 @@
     "url": "https://github.com/ndustrialio/node-red-contrib-ndustrialio/issues"
   },
   "homepage": "https://github.com/ndustrialio/node-red-contrib-ndustrialiod#readme",
-  "dependencies": {
-    "@ndustrial/contxt-sdk": "^2.4.0"
-  },
+  "dependencies": {},
   "node-red": {
     "nodes": {
       "ngest": "ngest_formatter.js"
