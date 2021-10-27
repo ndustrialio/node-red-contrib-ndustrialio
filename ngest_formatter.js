@@ -1,5 +1,3 @@
-//const sdk = require('@ndustrial/contxt-sdk');
-
 module.exports = function (RED) {
     function NgestFormatterNode(config) {
         RED.nodes.createNode(this, config);
